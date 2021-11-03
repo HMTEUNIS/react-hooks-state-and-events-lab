@@ -6,10 +6,10 @@ function ShoppingList({ items }) {
     <div className="ShoppingList">
       <div className="Filter">
         <select name="filter">
-          <option value="All">Filter by category</option>
-          <option value="Produce">Produce</option>
-          <option value="Dairy">Dairy</option>
-          <option value="Dessert">Dessert</option>
+          <option value="All" onClick={all}>Filter by category</option>
+          <option value="Produce" onClick={produce}>Produce</option>
+          <option value="Dairy" onClick={dairy}>Dairy</option>
+          <option value="Dessert" onClick={dessert}>Dessert</option>
         </select>
       </div>
       <ul className="Items">
